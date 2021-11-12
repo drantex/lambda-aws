@@ -49,7 +49,10 @@ const validGrups = (dataGroups) => {
         return false;
     }
 
+    let numberGroup;
+    
     for (let i = 0, len = dataGroups.length; i < len; i++) {
+        numberGroup = dataGroups[i];
         if ( isNaN(numberGroup)  || numberGroup <= 0 ) {
             response = false;
             break
